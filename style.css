@@ -1,0 +1,486 @@
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: cadetblue;
+    }
+    
+    .navbar {
+        padding: 0.8rem;
+    }
+    
+    .navbar-nav {
+        padding-right: 20px;
+    }
+    
+    .nav-link {
+        font-size: 1.1em !important;
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .carousel-caption h1 {
+        font-size: 300%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 150%;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px 10px #000;
+    }
+    
+    .jumbotron {
+        padding: 1rem;
+        border-radius: 0;
+    }
+    
+    .padding {
+        padding-bottom: 1.5rem;
+    }
+    
+    .welcome {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        color: cadetblue;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .welcome hr {
+        border-top: 2px solid lightblue;
+        width: 95%;
+        margin-top: .3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .social a {
+        font-size: 2em;
+        padding: 1.5rem;
+    }
+    
+    .fa-facebook {
+        color: blue;
+    }
+    
+    .fa-twitter {
+        color: #00aced;
+    }
+    
+    .fa-whatsapp {
+        color: green;
+    }
+    
+    .fa-instagram {
+        color: orangered;
+    }
+    
+    .fa-linkedin {
+        color: blue;
+    }
+    
+    .fa-instagram:hover,
+    .fa-facebook:hover,
+    .fa-youtube:hover,
+    .fa-linkedin:hover {
+        color: aquamarine
+    }
+    
+    footer {
+        background-color: lightblue;
+        color: #000;
+        padding: 2rem;
+    }
+    
+    hr.light {
+        border-top: 1px solid cadetblue;
+        width: 75%;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer a {
+        color: #d5d5d5;
+    }
+    
+    hr.light-100 {
+        border-top: 1px solid white;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    /*---Media Queries --*/
+    
+    @media (max-width: 992px) {
+        .social a {
+            font-size: 1.5em;
+            padding: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .carousel-caption {
+            top: 45%;
+        }
+        .carousel-caption h1 {
+            font-size: 300%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px 15px #000;
+        }
+        .carousel-caption h3 {
+            font-size: 150%;
+            font-weight: 500;
+            padding-bottom: 0.2rem;
+        }
+        .display-4 {
+            font-size: 100%;
+        }
+        .social a {
+            font-size: 1.5em;
+            padding: 0.5rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .carousel-caption {
+            top: 40%;
+        }
+        .carousel-caption h1 {
+            font-size: 150%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px 15px #000;
+        }
+        .carousel-caption h3 {
+            font-size: 110%;
+            font-weight: 500;
+            padding-bottom: 0.2rem;
+        }
+        .display-4 {
+            font-size: 200%;
+        }
+        .social a {
+            font-size: 1.5em;
+            padding: 0.5rem;
+        }
+    }
+    /*---Firefox Bug Fix --*/
+    
+    .carousel-item {
+        transition: -webkit-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+    /*--- Fixed Background Image --*/
+    
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    
+    figure {
+        position: relative;
+        width: 100%;
+        height: 60%;
+        margin: 0 !important;
+    }
+    
+    .fixed-wrap {
+        clip: rect(0, auto, auto, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #fixed {
+        background-image: url('img/mac.png');
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    /*Why Us Css*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    span {
+        display: inline-block;
+        text-decoration: none;
+        color: lightblue;
+    }
+    
+    .section-head {
+        margin-bottom: 60px;
+    }
+    
+    .section-head h4 {
+        position: relative;
+        padding: 0;
+        color: lightblue;
+        line-height: 1;
+        letter-spacing: 0.3px;
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: none;
+        margin-bottom: 30px;
+    }
+    
+    .section-head h4::before {
+        content: '';
+        width: 60px;
+        height: 3px;
+        background: cadetblue;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    .section-head p {
+        color: lightblue;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    .item {
+        background: silver;
+        text-align: center;
+        padding: 30px 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        margin-bottom: 30px;
+        border: 3px solid cadetblue;
+        -webkit-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    /*
+    
+    .item :hover {
+        background: cadetblue;
+        box-shadow: 0.8px 20px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.5s ease 0;
+        transition: all 0.5s ease 0;
+    }
+    
+    .item:hover .item,
+    .item:hover span.icon {
+        background: cadetblue;
+        border-radius: 20px;
+        -webkit-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+    }
+    */
+    
+    .item .icon {
+        font-size: 25px;
+        margin-bottom: 25px;
+        color: cadetblue;
+        width: 25px;
+        height: 25px;
+        line-height: 96px;
+        border-radius: 25px;
+    }
+    
+    .item .feature_box_col_one {
+        background: rgba(247, 198, 5, 0.2);
+        color: lightblue;
+    }
+    
+    .item .feature_box_col_two {
+        background: rgba(255, 77, 28, 015);
+        color: lightskyblue;
+    }
+    
+    .item .feature_box_col_three {
+        background: rgba(0, 147, 38, 0.15);
+        color: lightblue;
+    }
+    
+    .item .feature_box_col_four {
+        background: rgba(0, 108, 255, 0.15);
+        color: lightskyblue;
+    }
+    
+    .item .feature_box_col_five {
+        background: rgba(146, 39, 255, 0.15);
+        color: lightblue;
+    }
+    
+    .item .feature_box_col_six {
+        background: rgba(23, 39, 246, 0.15);
+        color: lightskyblue;
+    }
+    
+    .item p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    
+    .item h6 {
+        margin-bottom: 20px;
+        color: lightblue;
+    }
+    
+    / *--- Bootstrap Padding Fix --*/ [class*="col-"] {
+        padding: 1rem;
+    }
+    /*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/* Custom styles for the "What We Do" section */
+#services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#services h1 {
+    color: lightblue;
+}
+
+#services hr {
+    width: 50px;
+    border-top: 2px solid lightskyblue;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#services p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#services ol {
+    margin-top: 20px;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+#services li i {
+    color: lightblue;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mission-vision-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/8.jpg'); /* Relative path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .mission, .vision {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .mission, .vision {
+      width: 90%;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .mission, .vision {
+      width: 95%;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  }
+  
